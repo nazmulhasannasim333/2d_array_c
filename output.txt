@@ -1,1 +1,1 @@
-This is a square matrix
+This is a zero matrix
