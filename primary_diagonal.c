@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main()
 {
@@ -14,7 +15,7 @@ int main()
         }
     }
 
-    int isDiagonal = 1;
+    bool isDiagonal = true;
 
     if (r == c)
     {
@@ -26,13 +27,13 @@ int main()
                 {
                     if (a[i][j] != 0)
                     {
-                        isDiagonal = 0;
+                        isDiagonal = false;
                         printf("This is not a diagonal matrix");
                     }
                 }
             }
         }
-        if (isDiagonal == 1)
+        if (isDiagonal)
         {
             printf("This is a diagonal matrix");
         }

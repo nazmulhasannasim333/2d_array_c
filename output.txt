@@ -1,1 +1,1 @@
-This is not a diagonal matrix
+This is a diagonal matrix
