@@ -15,7 +15,7 @@ int main()
         }
     }
 
-    bool isScalar = true;
+    bool isUnit = true;
 
     if (r == c)
     {
@@ -27,28 +27,28 @@ int main()
                 {
                     if (a[i][j] != 0)
                     {
-                        isScalar = false;
-                        printf("This is not a scalar matrix");
+                        isUnit = false;
+                        printf("This is not a unit matrix");
                     }
                 }
                 else
                 {
-                    if (a[i][j] != a[0][0])
+                    if (a[i][j] != 1)
                     {
-                        isScalar = false;
-                        printf("This is not a scalar matrix");
+                        isUnit = false;
+                        printf("This is not a unit matrix");
                     }
                 }
             }
         }
-        if (isScalar)
+        if (isUnit)
         {
-            printf("This is a scalar matrix");
+            printf("This is a unit matrix");
         }
     }
     else
     {
-        printf("This is not a scalar matrix");
+        printf("This is not a unit matrix");
     }
 
     return 0;
