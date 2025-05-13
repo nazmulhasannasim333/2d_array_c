@@ -14,13 +14,13 @@ int main()
         }
     }
 
-    if (c == 1)
+    if (r == c)
     {
-        printf("This is a col matrix\n");
+        printf("This is a square matrix\n");
     }
     else
     {
-        printf("This is not a col matrix\n");
+        printf("This is not a square matrix\n");
     }
 
     return 0;
